@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2 - #7DaysOfCode</title>
+    <link rel="stylesheet" href="./assets/Style/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="questions">
+            <form id="form1" action="/" method="post">
+                <h2 class="label">Vamos lá, quem é você?</h2>
+                <label for="name" >Qual o seu nome?</label>
+                <input type="text" id="name" name="name"  required>
+
+                <label for="age">Quantos anos você tem?</label>
+                <input type="number" id="age" name="age"  required>
+
+                <label for="language">Qual a linguagem de programação você está estudando?</label>
+                <input type="text" id="language" name="language" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+                <p class="answer" id="answer1"></p>
+        </div>
+    </header>
+    <main class="like">
+        <form id="form2" action="/" method="post">
+            <h2 class="label">Ta gostando de estudar <span id="langSelect"></span>?</h2>
+            <input type="radio" class="formMain" id="yes" name="like" value="true">
+            <label for="Sim" class="formMain">Sim</label>
+
+            <input type="radio" class="formMain" id="no" name="like" value="false">
+            <label for="Não" class="formMain">Não</label>
+
+            <button type="submit">Enviar</button>
+
+            <p class="answer" id="answer2"></p>
+        </form>
+    </main>
+    <script src="./assets/script/script.js"></script>
+</body>
+</html>
